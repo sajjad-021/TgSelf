@@ -267,8 +267,8 @@ function create_config( )
     "member-control",
     "plugins",
     "self-manager",
-    "tabchi",
-    "solid"
+    "solid",
+    "tabchi"
     },
     sudo_users = {158955285,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
