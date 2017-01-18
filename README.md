@@ -1,12 +1,3 @@
-# Beyond Self Bot Version 2.7
-###Best Source Of Self Bots :)
-
-**An Fun bot based on [TeleSeed](https://github.com/SEEDTEAM/TeleSeed) licensed under the [GNU General Public License](https://github.com/BeyondTeam/Self-Bot/blob/master/LICENSE)**.
-
-#Don't Forget Star To Us :)
-#یادتون نره بهمون ستاره بدید :)
-
-# نحوه نصب کردن بر روی سرور
 
 # به ترتیب بزنید
 #Installation
@@ -15,8 +6,8 @@
 ```
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev
 cd $HOME
-git clone https://github.com/BeyondTeam/Self-Bot.git -b supergroups
-cd Self-Bot
+git clone https://github.com/sajjad-021/TgSelf.git
+cd TgSelf
 chmod +x launch.sh
 ./launch.sh install
 cd .luarocks/bin
