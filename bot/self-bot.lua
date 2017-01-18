@@ -62,22 +62,22 @@ function msg_valid(msg)
   -- Before bot was started
   if msg.date < os.time() - 5 then
     print('\27[36mNot valid: old msg\27[39m')
-    return false
+    return true
   end
 
   if msg.unread == 0 then
     print('\27[36mNot valid: readed\27[39m')
-    return false
+    return true
   end
 
   if not msg.to.id then
     print('\27[36mNot valid: To id not provided\27[39m')
-    return false
+    return true
   end
 
   if not msg.from.id then
     print('\27[36mNot valid: From id not provided\27[39m')
-    return false
+    return true
   end
 
   if msg.from.id == our_id then
@@ -87,7 +87,7 @@ function msg_valid(msg)
 
   if msg.to.type == 'encr_chat' then
     print('\27[36mNot valid: Encrypted chat\27[39m')
-    return false
+    return true
   end
 
   if msg.from.id == 777000 then
@@ -215,24 +215,24 @@ end
 function create_self( )
   self = {
     names = {
-    "solid",
-    "Solid",
-    "سلید",
-    "سولید",
-    "سعید",
-    "saeed",
-    "Saeed",
-    "Saeid",
-    "saeid"
+    "sajjad",
+    "sajad",
+    "sajjad_021",
+    "@sajjad_021",
+    "سجاد",
+    "سجادم",
+    "عاغا",
+    "اقا",
+    "جناب"
     },
     answers = {
-    "وات؟ :/",
-    "بلی؟",
-    "بفرما",
-    "بوگوی :|",
+    "جانم؟ :/",
+    "جانم؟",
+    "جانم؟",
+    "جانم؟ :|",
     "جونم؟",
-    "جونز",
-    "ژون؟ :/"
+    "جانم؟",
+    "جانم؟ :/"
     },
 }
   serialize_to_file(self, './data/self.lua')
@@ -267,6 +267,7 @@ function create_config( )
     "member-control",
     "plugins",
     "self-manager",
+    "tabchi",
     "solid"
     },
     sudo_users = {157059515,136701650,tonumber(our_id)},--Sudo users
